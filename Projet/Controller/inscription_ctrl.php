@@ -15,7 +15,6 @@ if (isset($_POST['connexion']) && !empty($_POST['login1']) && !empty($_POST['pas
     $_SESSION['user'] = ['auth' => true, 'login1' => $_POST['login1']];
 };
 
-require_once dirname(__FILE__).'/../Controller/header_ctrl.php';
 
 $civility = $lastname =$login=$email= $firstname =$password=$login1=$passwordLogin=$birthdate= $verifPassword = "";
 $age = 0;
@@ -27,7 +26,7 @@ $regexTelephone = '/^(?:\+33|0033|0)[1-79]((?:([\-\/\s\.])?[0-9]){2}){4}$/';
 $regexBirthday='/^((?:19|20)[0-9]{2})-((?:0[1-9])|(?:1[0-2]))-((?:0[1-9])|(?:1[0-9])|(?:2[0-9])|(?:3[01]))$/';
 $post=[];
 $photo = $_COOKIE['picture'] ?? 'avatar.jpg';
-require_once dirname(__FILE__).'/../View/navbar.php';
+
 
 
 //validation formulaire
@@ -131,5 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['inscription'])) {
        <?php endif;
 
 }
-require_once dirname(__FILE__).'/../View/navbarInscript.php';
+require_once dirname(__FILE__).'/../Controller/header_ctrl.php';
+require_once dirname(__FILE__).'/../View/navbar.php';
+require_once dirname(__FILE__).'/../View/navbarBottom.php';
 require_once dirname(__FILE__).'/../View/inscription.php';

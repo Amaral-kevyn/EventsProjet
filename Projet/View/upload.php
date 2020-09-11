@@ -1,7 +1,3 @@
-<?php
-include 'navbar.php';
-include 'header.php';
-?>
 <form id='tof' action="" method="post" enctype="multipart/form-data">
     <label for="picture">Téléchager une image de profile</label>
     <input type="file" name="picture" id="picture">

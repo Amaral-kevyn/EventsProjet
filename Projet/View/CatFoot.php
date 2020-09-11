@@ -1,6 +1,5 @@
 <main>
         <div class="contenair-fluidFoot">
-        <?php include 'navbar.php'; ?>
             <div class="row">
                 <div class="col-12 text-center my-5 text-white">
                     <h2>Choisit le style d'evenement que tu veux faire</h2>

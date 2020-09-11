@@ -1,12 +1,6 @@
-<?php
-
- include '../Controller/header_ctrl.php';
-
- ?>
     <!--main-->
     <main>
         <div class="contenair-fluid">
-            <?php include '../View/navbar.php'; ?>
             <div class="row">
                 <div class="col-12 text-center my-5 text-white">
                     <h2>Choisis la catégorie de ton événement</h2>

@@ -1,7 +1,5 @@
 <?php 
 	$title = 'Cookie data user';
-	include 'header.php';
-	include 'navbar.php';
 
 	if (isset($_COOKIE['user'])) {
 		// reforme le tableau serialisé
